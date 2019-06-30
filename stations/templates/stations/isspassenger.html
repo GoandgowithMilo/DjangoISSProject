@@ -1,0 +1,10 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'stations/style.css' %}">
+
+<h1> Astronauts Aboard the International Space Station </h1>
+<h2>
+{% for name in result %}
+    <li>{{ name }}</li>
+{% endfor %}
+</h2>
